@@ -29,7 +29,7 @@ namespace AppBancoDigital.View
                 Correntista co = await DataServiceCorrentista.Cadastrar(new Correntista
                 {
                     Nome = txt_nome.Text,
-                    Cpf = int.Parse(txt_cpf.Text),
+                    Cpf = Convert.ToInt32(txt_cpf.Text), // int.Parse(txt_cpf.Text)
                     Data_Nasc = dtpck_data_nasc.Date,
                     Senha = txt_senha.Text                 
                 });

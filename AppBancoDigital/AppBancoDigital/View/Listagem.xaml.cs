@@ -16,5 +16,15 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
         }
+
+        private void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
