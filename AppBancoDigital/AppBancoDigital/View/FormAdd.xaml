@@ -2,33 +2,54 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.FormAdd"
-             Title="Cadastro de Correntista">
+             Title="Cadastro de Correntista"
+             BackgroundColor="#ec0000">
 
-    <ContentPage.ToolbarItems>
+    <!--<ContentPage.ToolbarItems>
         <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked" />
-    </ContentPage.ToolbarItems>
+    </ContentPage.ToolbarItems>-->
 
     <ContentPage.Content>
-        <StackLayout>
 
-            <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" />
+        <Grid>
 
-            <Frame Margin="10" Padding="10">
-                <StackLayout>
-                    <Label Text="Nome: " />
-                    <Entry x:Name="txt_nome" />
+            <StackLayout>
 
-                    <Label Text="CPF: " />
-                    <Entry x:Name="txt_cpf" />
+                <ActivityIndicator x:Name="act_carregando" IsVisible="False" IsRunning="False" />
 
-                    <Label Text="Data Nascimento: " />
-                    <DatePicker x:Name="dtpck_data_nasc" />
-
-                    <Label Text="Senha: " />
-                    <Entry x:Name="txt_senha" />
+                <StackLayout Padding="50" VerticalOptions="Start" HorizontalOptions="Center">
+                    <Image x:Name="logo" HeightRequest="70" />
+                    <Label Text="Cadastro Correntista" FontSize="Title" TextColor="#fff" FontAttributes="Bold" />
                 </StackLayout>
-            </Frame>
 
-        </StackLayout>
+
+                <StackLayout VerticalOptions="Center">
+
+                    <Frame BackgroundColor="Transparent" Margin="20">
+                        <StackLayout>
+                            <Label Text="Nome" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <Entry x:Name="txt_nome" TextColor="#fff" />
+
+                            <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <Entry x:Name="txt_cpf" IsPassword="True" TextColor="#fff" />
+
+                            <Label Text="Data Nascimento" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <DatePicker x:Name="dtpck_data_nasc" TextColor="#fff" />
+
+                            <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                            <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
+                        </StackLayout>
+                    </Frame>
+
+                    <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+        </Grid>
+        
     </ContentPage.Content>
 </ContentPage>

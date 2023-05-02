@@ -17,6 +17,9 @@ namespace AppBancoDigital.View
         public FormAdd()
         {
             InitializeComponent();
+
+            logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo2.png");
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)
@@ -49,6 +52,11 @@ namespace AppBancoDigital.View
                 act_carregando.IsRunning = false;
                 act_carregando.IsVisible = false;
             }
+        }
+
+        private void btn_cadastrar_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
