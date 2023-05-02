@@ -2,34 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
-             Title="Login">
+             Title="Login"
+             BackgroundColor="#ec0000">
 
     <Grid>
         <StackLayout>
-            
+
             <StackLayout Padding="80" VerticalOptions="Start" HorizontalOptions="Center">
-                <Label Text="LOGIN" FontSize="Title" TextColor="#000" FontAttributes="Bold" />
+                <Image x:Name="logo" HeightRequest="70" />
             </StackLayout>
 
             <StackLayout VerticalOptions="Center">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
-                        <Label Text="E-mail" FontSize="Body" TextColor="#000" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_email" Keyboard="Email" ReturnType="Next" ClearButtonVisibility="WhileEditing" />
-                        
-                        <Label Text="Senha" FontSize="Body" TextColor="#000" HorizontalOptions="Start" />
-                        <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" />
+                        <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                        <Entry x:Name="txt_cpf" Keyboard="Numeric" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="#fff" />
+
+                        <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
+                        <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#fff" />
                     </StackLayout>
                 </Frame>
+                
 
-                <Button x:Name="btn_logar" Text="Logar" BackgroundColor="#000" TextColor="#fff"
-                        CornerRadius="20" HorizontalOptions="Center" />
+                <Button x:Name="btn_logar" Text="Logar" BackgroundColor="#fff" TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logar_Clicked" />
 
-                <Button x:Name="btn_criar" Text="Não tem uma conta? Criar uma conta."
+                <Button x:Name="btn_criarConta" Text="Não tem uma conta? Criar uma conta."
                         FontAttributes="Italic" TextTransform="None"
-                        BackgroundColor="Transparent" TextColor="Gray"
+                        BackgroundColor="Transparent" TextColor="#fff"
                         CornerRadius="20" HorizontalOptions="Center"
-                        Clicked="btn_criar_Clicked" />
+                        Clicked="btn_criarConta_Clicked" />
 
             </StackLayout>
             

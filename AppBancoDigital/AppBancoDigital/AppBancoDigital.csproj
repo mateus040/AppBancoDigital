@@ -12,6 +12,18 @@
 
   <ItemGroup>
     <None Remove="View\Correntista.xaml" />
+    <None Remove="View\Img\logo2.png" />
+    <None Remove="View\logo.png" />
+    <None Remove="View\logo2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="View\Img\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Img\logo2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +34,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Menu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\CriarConta.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\FormAdd.xaml">
