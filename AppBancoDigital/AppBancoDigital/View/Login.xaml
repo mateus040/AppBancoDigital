@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital.CustomeRenderer"
              x:Class="AppBancoDigital.View.Login"
              Title="Login"
              BackgroundColor="#ec0000">
@@ -11,15 +12,14 @@
             <StackLayout Padding="80" VerticalOptions="Start" HorizontalOptions="Center">
                 <Image x:Name="logo" HeightRequest="70" />
             </StackLayout>
-
+          
             <StackLayout VerticalOptions="Center">
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
-                        <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                        <Entry x:Name="txt_cpf" Keyboard="Numeric" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="#fff" />
 
-                        <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
-                        <Entry x:Name="txt_senha" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#fff" />
+                        <control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF:" FontAttributes="Bold" TextColor="White" PlaceholderColor="#fff" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX"/>
+                        <Entry x:Name="txt_senha" Placeholder="Senha:" PlaceholderColor="#fff" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#fff" FontAttributes="Bold" />
+                        
                     </StackLayout>
                 </Frame>
                 
