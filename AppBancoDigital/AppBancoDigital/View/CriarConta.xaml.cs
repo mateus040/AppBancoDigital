@@ -31,5 +31,17 @@ namespace AppBancoDigital.View
                 await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
             }
         }
+
+        private async void btn_voltar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Login());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+            }
+        }
     }
 }

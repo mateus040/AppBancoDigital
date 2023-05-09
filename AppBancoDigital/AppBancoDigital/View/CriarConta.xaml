@@ -32,8 +32,18 @@
                         </StackLayout>
                     </Frame>
 
-                    <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
+                    <FlexLayout Direction="Row"
+                                AlignItems="Center"
+                                JustifyContent="SpaceEvenly">
+
+                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_CriarConta_Clicked" />
+
+                        <Button x:Name="btn_voltar" Text="Voltar" BackgroundColor="#fff" TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_voltar_Clicked" />
+                        
+                    </FlexLayout>
+
 
                 </StackLayout>
 
