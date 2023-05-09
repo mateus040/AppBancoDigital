@@ -32,6 +32,8 @@ namespace AppBancoDigital.View
             }
         }
 
+        //
+
         private async void btn_voltar_Clicked(object sender, EventArgs e)
         {
             try
