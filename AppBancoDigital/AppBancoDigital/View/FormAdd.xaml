@@ -41,8 +41,18 @@
                         </StackLayout>
                     </Frame>
 
-                    <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
+                    <FlexLayout Direction="Row"
+                                AlignItems="Center"
+                                JustifyContent="SpaceEvenly">
+                        
+                        <Button x:Name="btn_cadastrar" Text="Cadastrar" BackgroundColor="#fff" TextColor="#000"
                         CornerRadius="20" HorizontalOptions="Center" Clicked="btn_cadastrar_Clicked" />
+
+                        <Button x:Name="btn_logout" Text="Logout" BackgroundColor="#fff" TextColor="#000"
+                        CornerRadius="20" HorizontalOptions="Center" Clicked="btn_logout_Clicked" VerticalOptions="Fill" />
+                        
+                    </FlexLayout>
+                    
 
                 </StackLayout>
 

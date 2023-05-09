@@ -12,12 +12,16 @@ namespace AppBancoDigital.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
     {
+        App PropriedadesApp;
+
         public Login()
         {
             InitializeComponent();
 
             logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo.png");
             NavigationPage.SetHasNavigationBar(this, false);
+
+            PropriedadesApp = (App)Application.Current;
         }
 
         private void btn_criarConta_Clicked(object sender, EventArgs e)
@@ -29,7 +33,16 @@ namespace AppBancoDigital.View
         {
             try
             {
-                await Navigation.PushAsync(new FormAdd());
+                string cpf = txt_cpf.Text;
+                string senha = txt_senha.Text;
+
+                if (PropriedadesApp.list_usuarios.Any(i => (i.Cpf == cpf && i.Senha == senha)))
+                {
+                    App.Current.Properties.Add("usuario_logado", cpf);
+                    App.Current.MainPage = new FormAdd();
+                }
+                else
+                    throw new Exception("Dados incorretos, tente novamente.");
             }
             catch (Exception ex)
             {

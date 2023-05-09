@@ -54,9 +54,34 @@ namespace AppBancoDigital.View
             }
         }
 
-        private void btn_cadastrar_Clicked(object sender, EventArgs e)
+        private async void btn_cadastrar_Clicked(object sender, EventArgs e)
         {
+            try
+            {
+                await Navigation.PushAsync(new Listagem());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops, ocorreu um erro...", ex.Message, "OK");
+            }
+        }
 
+        private async void btn_logout_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                bool confirm = await DisplayAlert("Tem certeza?", "Desconectar sua conta?", "Sim", "Não");
+
+                if (confirm)
+                {
+                    App.Current.Properties.Remove("usuario_logado");
+                    App.Current.MainPage = new Login();
+                }
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
         }
     }
 }
