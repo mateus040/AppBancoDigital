@@ -4,5 +4,14 @@
              x:Class="AppBancoDigital.App">
     <Application.Resources>
 
+        <Style x:Key="ButtonBrancoHome" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#fff" />
+            <Setter Property="TextColor" Value="#000" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="BorderRadius" Value="10" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="VerticalOptions" Value="Fill" />
+        </Style>
+        
     </Application.Resources>
 </Application>
