@@ -19,7 +19,6 @@ namespace AppBancoDigital.View
             InitializeComponent();
 
             logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo2.png");
-            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void ToolbarItem_Clicked(object sender, EventArgs e)

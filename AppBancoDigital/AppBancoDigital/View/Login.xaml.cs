@@ -39,7 +39,7 @@ namespace AppBancoDigital.View
                 if (PropriedadesApp.list_usuarios.Any(i => (i.Cpf == cpf && i.Senha == senha)))
                 {
                     App.Current.Properties.Add("usuario_logado", cpf);
-                    App.Current.MainPage = new FormAdd();
+                    App.Current.MainPage = new Home();
                 }
                 else
                     throw new Exception("Dados incorretos, tente novamente.");
