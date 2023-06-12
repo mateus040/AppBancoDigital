@@ -4,9 +4,7 @@ using System.Text;
 
 namespace AppBancoDigital.Model
 {
-    public class DadosUsuario
+    internal class Pix
     {
-        public string Cpf { get; set; }
-        public string Senha { get; set; }
     }
 }
