@@ -10,23 +10,13 @@ namespace AppBancoDigital
 {
     public partial class App : Application
     {
-        public List<DadosUsuario> list_usuarios = new List<DadosUsuario>
-        {
-            new DadosUsuario()
-            {
-                Cpf = "561.822.558-11",
-                Senha = "123"
-            }
-        };
+        public static Model.Correntista DadosCorrentista { get; set; }
 
         public App()
         {
             InitializeComponent();
 
-            if (Properties.ContainsKey("usuario_logado"))
-                MainPage = new FormAdd();
-            else
-                MainPage = new Login();
+            MainPage = new NavigationPage(new View.Login());
         }
 
         protected override void OnStart()
