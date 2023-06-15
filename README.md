@@ -4,6 +4,8 @@ Este é um aplicativo de Banco Digital desenvolvido usando Xamarin.Forms. O apli
 
 O aplicativo é alimentado por uma API, ela é responsável pelo recebimento dos dados cadastrados através do aplicativo onde são gravados no banco de dados e fornecidos novamente ao usuário no aplicativo.
 
+### (Obs: O aplicativo se encontra em estado de desenvolvimento, algumas funções ainda não foram concluídas)
+
 ## RECURSOS DO APLICATIVO
 - Criação de conta corrente;
 - Transações (função em andamento);
