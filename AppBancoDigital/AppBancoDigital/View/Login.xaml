@@ -17,7 +17,8 @@
                 <Frame BackgroundColor="Transparent" Margin="20">
                     <StackLayout>
 
-                        <control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF:" FontAttributes="Bold" TextColor="White" PlaceholderColor="#fff" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX"/>
+                        <Entry x:Name="txt_cpf" Placeholder="CPF:" PlaceholderColor="#fff" Keyboard="Default" ReturnType="Done" ClearButtonVisibility="WhileEditing" TextColor="#fff" FontAttributes="Bold" />
+                        <!--<control:MaskedEntry x:Name="txt_cpf" Placeholder="CPF:" FontAttributes="Bold" TextColor="White" PlaceholderColor="#fff" Keyboard="Numeric" Mask="XXX.XXX.XXX-XX"/>-->
                         <Entry x:Name="txt_senha" Placeholder="Senha:" PlaceholderColor="#fff" Keyboard="Default" ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing" TextColor="#fff" FontAttributes="Bold" />
                         
                     </StackLayout>

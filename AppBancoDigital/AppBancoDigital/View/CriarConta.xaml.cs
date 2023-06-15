@@ -23,9 +23,6 @@ namespace AppBancoDigital.View
 
         private async void btn_CriarConta_Clicked(object sender, EventArgs e)
         {
-            string[] cpf_pontuado = txt_cpf.Text.Split('.', '-');
-            string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
-
             try
             {
                 Model.Correntista c = await DataServiceCorrentista.SaveAsync(new Model.Correntista
@@ -33,7 +30,7 @@ namespace AppBancoDigital.View
                     Nome = txt_nome.Text,
                     Email = txt_email.Text,
                     Data_Nasc = dtpck_data_nascimento.Date,
-                    Cpf = cpf_digitado,
+                    Cpf = txt_cpf.Text,
                     Senha = txt_senha.Text,
                 });
 
