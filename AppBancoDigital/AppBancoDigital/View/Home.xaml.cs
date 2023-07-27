@@ -16,7 +16,7 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
 
-            logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo.png");
+            //logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo.png");
             NavigationPage.SetHasNavigationBar(this, false);
         }
     }
