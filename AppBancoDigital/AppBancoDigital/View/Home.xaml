@@ -36,21 +36,54 @@
 
                     <ScrollView Orientation="Horizontal">
 
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="10" HeightRequest="50" WidthRequest="50" />
-                                <Label Text="pix" TextColor="#000" HorizontalOptions="Center" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="10" HeightRequest="50" WidthRequest="50" />
-                                <Label Text="pagar" TextColor="#000" HorizontalOptions="Center" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Pagar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Transferir" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Depositar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Emprestimo" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Recarga" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Cobrar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout>
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <Label FontSize="12" Text="Doação" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                         </StackLayout>
                         
                     </ScrollView>
+
+                    <Button BackgroundColor="#f0f1f5" Text="Meus Cartões" TextColor="#000" CornerRadius="10" ImageSource="cartao.png" ContentLayout="Left,-50" />
+
                 </StackLayout>
                 
             </Grid>
