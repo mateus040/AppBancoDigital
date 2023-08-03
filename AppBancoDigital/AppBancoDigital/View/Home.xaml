@@ -14,9 +14,9 @@
                 <StackLayout Grid.Row="0" BackgroundColor="#820ad1" Padding="15">
 
                     <StackLayout Orientation="Horizontal">
-                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#9b3bda" CornerRadius="50" Source="logo2.png" Padding="10" HorizontalOptions="StartAndExpand" />
-                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="logo2.png" Padding="10" />
-                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="logo2.png" Padding="10" />
+                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#9b3bda" CornerRadius="50" Source="usuario.png" Padding="10" HorizontalOptions="StartAndExpand" />
+                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="olho.png" Padding="10" />
+                        <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="ajuda.png" Padding="10" />
                         <ImageButton HeightRequest="50" WidthRequest="50" BackgroundColor="#820ad1" CornerRadius="50" Source="logo2.png" Padding="10" />
                     </StackLayout>
 
@@ -39,42 +39,42 @@
                         <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="codigo-de-barras.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Pagar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="transferir.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Transferir" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="depositar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Depositar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="emprestimo.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Emprestimo" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="recarga.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Recarga" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="cobrar.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Cobrar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="logo2.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="doacao.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
                                 <Label FontSize="12" Text="Doação" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
