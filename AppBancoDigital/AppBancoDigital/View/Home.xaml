@@ -39,8 +39,8 @@
                         <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="5">
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" />
-                                <Label FontSize="12" Text="Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" Clicked="Button_Clicked_Fazer_Pix"/>
+                                <Label FontSize="12" Text="Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center"/>
                             </StackLayout>
 
                             <StackLayout>

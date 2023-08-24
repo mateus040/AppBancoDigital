@@ -19,5 +19,10 @@ namespace AppBancoDigital.View
             //logo.Source = ImageSource.FromResource("AppBancoDigital.View.Img.logo.png");
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private void Button_Clicked_Fazer_Pix(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Pix.EnviarPix());
+        }
     }
 }
