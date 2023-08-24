@@ -3,16 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
              x:Class="AppBancoDigital.View.Pix.PixLerQrCode"
-             Background="white">
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout>
 
             <Grid VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="4*" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-
                 <zxing:ZXingScannerView x:Name="zxing" 
                                 VerticalOptions="FillAndExpand"/>
                 <zxing:ZXingDefaultOverlay TopText="Segure o Telefone no QR Code"
@@ -24,7 +23,6 @@
                        HorizontalTextAlignment="Center"
                        VerticalTextAlignment="Center"/>
             </Grid>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
