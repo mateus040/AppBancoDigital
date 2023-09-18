@@ -31,13 +31,13 @@
                                 <Label Text="CPF" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                                 <Entry x:Name="txt_cpf" TextColor="#fff" />
 
-                                <Label Text="Data Nascimento: " TextColor="#fff" />
+                                <Label Text="Data Nascimento: " TextColor="#fff" FontAttributes="Bold" />
                                 <DatePicker x:Name="dtpck_data_nascimento" TextColor="#fff" />
 
                                 <Label Text="Senha" FontSize="Body" TextColor="#fff" HorizontalOptions="Start" FontAttributes="Bold" />
                                 <Entry x:Name="txt_senha" IsPassword="True" TextColor="#fff" />
 
-                                <Label Text="Confirme a Senha: " TextColor="#fff" />
+                                <Label Text="Confirme a Senha: " TextColor="#fff" FontAttributes="Bold" />
                                 <Entry x:Name="txt_senha_confirmacao" IsPassword="True" TextColor="#fff" />
                             </StackLayout>
                         </Frame>

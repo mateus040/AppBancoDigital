@@ -23,7 +23,7 @@
                     <Label Text="Olá, Mateus Moreno" FontAttributes="Bold" FontSize="20" TextColor="#fff" HorizontalOptions="StartAndExpand" />
 
                     <Frame HeightRequest="120" CornerRadius="15">
-                        <Label Text="Vem aceitar seu pedacinho" TextColor="#000" FontAttributes="Bold" HorizontalOptions="Start" HorizontalTextAlignment="Start" WidthRequest="200" FontSize="24" />
+                        <Label Text="Venha caminhar conosco!" TextColor="#000" FontAttributes="Bold" HorizontalOptions="Start" HorizontalTextAlignment="Start" WidthRequest="200" FontSize="24" />
                     </Frame>
 
                     <Button FontSize="14" HorizontalOptions="Start" Text="Eu quero" BackgroundColor="#fff" TextColor="#000" FontAttributes="Bold" CornerRadius="15" />
@@ -40,12 +40,12 @@
 
                             <StackLayout>
                                 <ImageButton HorizontalOptions="CenterAndExpand" Source="pix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" Clicked="Button_Clicked_Receber_Pix"/>
-                                <Label FontSize="12" Text="Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center"/>
+                                <Label FontSize="12" Text="Pagar com Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center"/>
                             </StackLayout>
 
                             <StackLayout>
-                                <ImageButton HorizontalOptions="CenterAndExpand" Source="codigo-de-barras.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" Clicked="Button_Clicked_Fazer_Pix" />
-                                <Label FontSize="12" Text="Pagar" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
+                                <ImageButton HorizontalOptions="CenterAndExpand" Source="receberPix.png" CornerRadius="50" BackgroundColor="#f0f1f5" Padding="25" HeightRequest="72" WidthRequest="72" Clicked="Button_Clicked_Fazer_Pix" />
+                                <Label FontSize="12" Text="Receber Pix" FontAttributes="Bold" TextColor="#000" HorizontalOptions="Center" />
                             </StackLayout>
 
                             <StackLayout>
